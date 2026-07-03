@@ -21,6 +21,9 @@ print("My name is Your Name")
 # - A sentence with spaces
 
 # Write your code here:
+print ("5") #str
+print (5) #int
+print (3.14) #float
 
 
 
@@ -29,11 +32,13 @@ print("My name is Your Name")
 print("First line")
 print("Second line")
 print("Third", "line", "with", "multiple", "arguments")
+print ("My expecter gpa of this term is",2.5)
+print (5*2.0)
 
 # Exercise 6: Comments Practice
 # Add comments above each print statement explaining what it does
 
-# 
+#
 print("Welcome to Python programming!")
 
 # 

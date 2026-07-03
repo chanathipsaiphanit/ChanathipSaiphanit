@@ -5,10 +5,13 @@ Learn about variables, data types, and basic Python syntax.
 
 # Exercise 1: Variables and Assignment
 # Create variables for the following information about yourself:
-name = "Your Name Here"  # Replace with your actual name
-age = 20  # Replace with your actual age
-height = 5.8  # Replace with your height in feet
-is_student = True  # True or False
+
+name = "Your Name Here"  # Replace with your actual name การประกาศตัวแปรประเภท string
+faculty = 'science at sriracha' #ใช้ '' หรือ "" ก็ได้ในการเก็บตัวแปรประเภท string
+
+age = 20  # Replace with your actual age การประกาศตัวแปรประเภท int
+height = 5.8  # Replace with your height in feet การประกาศตัวแปรประเภท float
+is_student = True  # True or False ตัวแปรประเภท Boolean
 
 # Print all variables
 print("Name:", name)
@@ -25,7 +28,7 @@ my_boolean = False
 
 # Use type() to see the data type
 print("Type of my_string:", type(my_string))
-print("Type of my_integer:", type(my_integer))
+print("Type of my_integer:", type(my_integer)) ### type คือ ฟังก์ชั่นในการหาประเภทของตัวแปรนั้นๆ
 print("Type of my_float:", type(my_float))
 print("Type of my_boolean:", type(my_boolean))
 
@@ -34,11 +37,11 @@ first_name = "John"
 last_name = "Doe"
 
 # Concatenate strings
-full_name = first_name + " " + last_name
+full_name = first_name + " " + last_name #การต่อข้อความ "" คือการเว้นวรรค 
 print("Full name:", full_name)
 
 # String length
-print("Length of full name:", len(full_name))
+print("Length of full name:", len(full_name)) # ฟังก์ชั่น len คือ การหาความยาวของ string
 
 # Exercise 4: Numbers and Arithmetic
 # Create two numbers and perform basic operations
@@ -77,16 +80,16 @@ print("a =", a, "b =", b, "c =", c)
 # Complete the following assignments:
 
 # String variable containing your favorite color
-favorite_color = 
+favorite_color = Blue
 
 # Integer variable with the current year
-current_year = 
+current_year = 2026
 
 # Float variable with your favorite number (with decimal)
-favorite_number = 
+favorite_number = 11.00
 
 # Boolean variable indicating if you like pizza
-likes_pizza = 
+likes_pizza = False
 
 # Print all variables with descriptive messages
 print("My favorite color is:", favorite_color)
