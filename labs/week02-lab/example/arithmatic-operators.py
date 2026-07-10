@@ -47,10 +47,12 @@ print()
 # =============================================================================
 
 print("=" * 50)
+print("1" + "2")
+print (1+2)
 print("DEMO 2: Interactive Calculator")
 print("=" * 50)
 
-# รับ input จากผู้ใช้
+# รับ input จากผู้ใช้ 
 num1 = float(input("Enter first number: "))
 num2 = float(input("Enter second number: "))
 
@@ -81,28 +83,28 @@ print("=" * 50)
 
 # ตัวอย่างลำดับการคำนวณ
 expression1 = "2 + 3 * 4"
-result1 = 2 + 3 * 4
+result1 = 2 + 3 * 4 #ทำคูณก่อน
 print(f"{expression1} = {result1}")
 print("Explanation: * has higher precedence than +")
 print("So: 2 + (3 * 4) = 2 + 12 = 14")
 print()
 
 expression2 = "(2 + 3) * 4"
-result2 = (2 + 3) * 4
+result2 = (2 + 3) * 4 #ทำในวงเล็บก่อน
 print(f"{expression2} = {result2}")
 print("Explanation: Parentheses have highest precedence")
 print("So: (2 + 3) * 4 = 5 * 4 = 20")
 print()
 
 expression3 = "2 ** 3 * 4"
-result3 = 2 ** 3 * 4
+result3 = 2 ** 3 * 4 # เครื่องหมาย ** คือยกกำลังทำยกกำลังก่อน
 print(f"{expression3} = {result3}")
 print("Explanation: ** has higher precedence than *")
 print("So: (2 ** 3) * 4 = 8 * 4 = 32")
 print()
 
 expression4 = "10 / 2 * 3"
-result4 = 10 / 2 * 3
+result4 = 10 / 2 * 3 #เครื่องหมาย หารและคูณ มีค่าเท่ากันทำซ้ายก่อน
 print(f"{expression4} = {result4}")
 print("Explanation: / and * have same precedence, evaluate left to right")
 print("So: (10 / 2) * 3 = 5.0 * 3 = 15.0")
@@ -164,9 +166,9 @@ print()
 # DEMO 5: Special Division Cases
 # =============================================================================
 
-print("=" * 50)
+print("=" * 40)
 print("DEMO 5: Division Types Explained")
-print("=" * 50)
+print("=" * 40)
 
 dividend = 17
 divisor = 5
