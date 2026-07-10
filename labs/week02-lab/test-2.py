@@ -1,7 +1,7 @@
 print("2. Time Converter:")
 print("   - Ask user for seconds")
 print("   - Convert to hours, minutes, and remaining seconds")
-print("   - Example: 3661 seconds = 1 hour, 1 minute, 1 second")
+print("   - Example: 3661 seconds = 1 hour, 1 minute, 1 seconds")
 print()
 
 
