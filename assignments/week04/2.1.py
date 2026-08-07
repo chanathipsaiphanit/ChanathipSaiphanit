@@ -1,6 +1,5 @@
 
 prices = []
-
 print("Enter prices of 6 items:")
 for i in range(6):
     price = int(input(f"Item {i+1}: "))

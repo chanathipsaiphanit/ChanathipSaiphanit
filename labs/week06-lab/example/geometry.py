@@ -15,7 +15,7 @@ def calculate_Circle_area( r ):
     """Calculates and displays rectangle area"""
     area = 3.1416 * r * r
     print(f" Circle  with radius {r} ")
-    print(f"Area = 3.1416 *{r} x {r} = {area}")
+    print(f"Area = 3.1416 * {r} * {r} = {area}")
     print()
 
 print("Calculating rectangle areas:")
