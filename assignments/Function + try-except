@@ -1,0 +1,21 @@
+def deposit(money):
+    balance = 1000
+    print("ยอดเงินเริ่มต้น:", balance, "บาท")
+    try:
+        # รับค่าและแปลงเป็นตัวเลข
+        amount = float(input("กรอกจำนวนเงินที่ต้องการฝาก: "))
+        # เช็คว่าเงินฝากต้องมากกว่า 0
+        if amount <= 0:
+            raise ValueError("จำนวนเงินฝากต้องมากกว่า 0")
+    except ValueError as e:
+        print("\nเกิดข้อผิดพลาด:", e)
+    else:
+        # ถ้ารับค่าถูกต้อง ให้คำนวณเงินใหม่
+        balance = balance + amount
+        print("\nฝากเงินสำเร็จ")
+        print("ยอดเงินคงเหลือ:", balance, "บาท")
+    finally:
+        print("สิ้นสุดรายการฝากเงิน")
+ 
+# เรียกใช้งานฟังก์ชัน
+deposit(1000)
