@@ -28,6 +28,9 @@ class Dog(Animal):
     # New method specific to Dog
     def fetch(self):
         print(f"{self.name} is fetching the ball")
+    def make_sound(self,input):
+        print()
+        
 
 class Cat(Animal):
     
