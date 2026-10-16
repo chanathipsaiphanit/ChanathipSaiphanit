@@ -26,5 +26,58 @@ Formatted Information:
 Name: JOHN DOE
 Age Group: Young Adult (18-30)
 Phone: +91-9876543210
-
 """
+
+
+print("=== PERSONAL INFORMATION VALIDATOR ===")
+
+name = input("ENTER YOUR NAME: ")
+age = int(input("ENTER YOUR AGE: "))
+phone = input("ENTER YOUR PHONE NUMBER: ")
+
+check_name = True
+
+for c in name:
+    if not (c.isalpha() or c.isspace()):
+        check_name = False
+
+check_age = False
+if 18 <= age <= 65:
+    check_age = True
+
+check_phone = False
+if len(phone) == 10 and phone.isdigit():
+    check_phone = True
+
+print("\nValidation Results")
+
+if check_name:
+    print("Name: Valid (contains only letters and spaces)")
+else:
+    print("Name: Invalid")
+
+if check_age:
+    print("Age: Valid (%d years old)" % age)
+else:
+    print("Age: Invalid")
+
+if check_phone:
+    print("Phone: Valid (10-digit number)")
+else:
+    print("Phone: Invalid")
+
+print("\nFormatted Information")
+
+if check_name:
+    print("Name: %s" % name.upper())
+
+if check_age:
+    if 18 <= age <= 30:
+        print("Age Group: Young Adult (18-30)")
+    elif age <= 60:
+        print("Age Group: Adult (31-60)")
+    else:
+        print("Age Group: Senior (>60)")
+
+if check_phone:
+    print("Phone: +66-%s" % phone)
